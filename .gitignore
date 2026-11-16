@@ -1,0 +1,49 @@
+# Mercurial metadata (original upstream history lives in .hg/)
+.hg/
+
+# temporary and compiled files
+\#*\#
+*~
+__pycache__/
+*.out
+.~lock*
+.pytest_cache/
+*.bak
+
+# data output from learning, such as weight files
+*.pt
+*.pkl
+*.h5
+
+# configuration files outside cfg/ (hydra run dirs, ad-hoc configs)
+*.yaml
+!cfg/**/*.yaml
+!environment.yml
+!simulation/example_config.yaml
+
+# datasets
+datasets/
+
+# experimental records and images
+*.csv
+*.png
+*.db
+!tests/envs/**/*.csv
+
+# html renderings of routes
+*.html
+
+# commit message files
+commit.txt
+
+# editor state
+.vscode/
+
+# tensorboard and logger logs, run outputs
+*tfevents*
+*.log
+training_logs/
+output/
+output_routes/
+outputs/
+multirun/
